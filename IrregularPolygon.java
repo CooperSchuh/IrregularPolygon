@@ -37,6 +37,7 @@ public class IrregularPolygon {
             firstTerm += point.x * point2.y; 
             secondTerm += point.y * point2.x;
         }
+        
         firstTerm += myPolygon.get(myPolygon.size()-1).x * myPolygon.get(0).y;
         secondTerm += myPolygon.get(myPolygon.size()-1).y * myPolygon.get(0).x;
         double area = 0.5 * (firstTerm-secondTerm);
